@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index.html</title>
+  </head>
+  <script type="text/javascript" src="site_media/js/jquery.min.js"></script>
+  <style type="text/css">
+  body{ 
+    background:url(site_media/img/index.jpg) no-repeat;
+    background-size:cover;
+    overflow:hidden;
+}
+.butt{position:absolute;top: 90%;margin-left: 37%;}
+.hy{position:absolute;margin-top: 12%;margin-left: 15%;}
+.tt{position:absolute;margin-top: 16%;margin-left: 28%;}
+  </style>
+  <body>
+  <div id="main" style="height: 1000px;width: 100%" onclick="location.href='aa.jsp'">
+  <div class="hy">
+    <img alt="欢迎进入" src="site_media/img/hy.png"></div>
+  <div class="tt">
+    <img alt="市生活饮用水卫生监督预警控制平台" src="site_media/img/tt.png"></div>
+  <div class="butt">本网页推荐使用chrome，火狐，360，IE11等游览器，1920*1080分辨率</div>
+  </div>
+  </body>
+  <script type="text/javascript">
+  	// 获取窗口宽度
+if (window.innerWidth)
+winWidth = window.innerWidth;
+else if ((document.body) && (document.body.clientWidth))
+winWidth = document.body.clientWidth;
+// 获取窗口高度
+if (window.innerHeight)
+winHeight = window.innerHeight;
+else if ((document.body) && (document.body.clientHeight))
+winHeight = document.body.clientHeight;
+//alert(winWidth+";"+winHeight);
+
+$('#main').css("height",winHeight-20);
+  </script>
+</html>
